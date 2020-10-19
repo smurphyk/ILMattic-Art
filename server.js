@@ -1,14 +1,19 @@
 const express = require('express')
 const app = express();
-const admin = require('firebase-admin')
+const admin = require('firebase-admin');
 
-const serviceAccount = require('./admin_sdk.json')
+const serviceAccount = require('./admin_sdk.json');
 
-const fb = admin.initializeApp({
+admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://stripe-tutorial-4168a.firebaseio.com"
+  databaseURL: "https://ilmattic-art.firebaseio.com"
+});
+
+app.get("/users", async (req, res) => {
+  fb.database().ref('/users').once('value').then(function(snapshot) {
+    res.send(users);
+  });
 })
-console.log(fb);
 
 const port = 5000;
 

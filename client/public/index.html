@@ -14,5 +14,21 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script>
+      const firebaseConfig = {
+    apiKey: "AIzaSyDcFKBcJOROgWibEZKQ4_2kT3rAg7Td6Mo",
+    authDomain: "ilmattic-art.firebaseapp.com",
+    databaseURL: "https://ilmattic-art.firebaseio.com",
+    projectId: "ilmattic-art",
+    storageBucket: "ilmattic-art.appspot.com",
+    messagingSenderId: "694104557278",
+    appId: "1:694104557278:web:26ad14213184954e7fe44f",
+    measurementId: "G-M3SQJFR6KD"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+    </script>
   </body>
 </html>
