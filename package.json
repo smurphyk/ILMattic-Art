@@ -18,6 +18,8 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
-    "firebase-admin": "^9.2.0"
+    "firebase-admin": "^9.2.0",
+    "gsap": "^3.5.1",
+    "react-transition-group": "^4.4.1"
   }
 }
